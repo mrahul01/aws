@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.7;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.10);
+
+    border-left: 5px solid rgba(255,255,255,0.7);
+
+    border-radius: 10px;
+
+    margin-bottom: 45px;
+}
+
+.about-section {
+    line-height: 1.9;
+    font-size: 1.05rem;
+    opacity: 0.96;
+}
+
+.about-section h2,
+.services h2,
+.mission h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+.about-section p {
+    margin-bottom: 18px;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.service-card {
+    padding: 14px 22px;
+
+    background: rgba(255,255,255,0.12);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255,255,255,0.18);
+}
+
+.mission {
+    margin-top: 50px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 12px;
+
+    line-height: 1.8;
+}
+
+.cta {
+    margin-top: 45px;
+
+    font-size: 1.1rem;
+
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 55px;
+
+    font-size: 0.95rem;
+
+    opacity: 0.85;
+
+    line-height: 1.8;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
